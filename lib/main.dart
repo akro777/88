@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_print, prefer_interpolation_to_compose_strings
+// ignore_for_file: avoid_print
 
 import 'dart:io';
 
@@ -363,8 +363,8 @@ class _MyAppState extends State<MyApp> {
               }),
         ],
             informationItems: [
-          CPInformationItem(title: "Item title 1", detail: "detail 1"),
-          CPInformationItem(title: "Item title 2", detail: "detail 2"),
+              CPInformationItem(title: "Item title 1", detail: "detail 1"),
+              CPInformationItem(title: "Item title 2", detail: "detail 2"),
         ]));
   }
 
@@ -555,8 +555,7 @@ class _MyAppState extends State<MyApp> {
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                textStyle: const TextStyle(fontSize: 15),
-                primary: Colors.red,
+                textStyle: const TextStyle(fontSize: 15), backgroundColor: Colors.red,
                 padding: const EdgeInsets.symmetric(
                   vertical: 12,
                   horizontal: 24,
